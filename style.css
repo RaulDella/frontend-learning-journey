@@ -1,0 +1,167 @@
+/* Config geral */
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+/* Titulo Principal */
+
+.titulo-principal {
+    color: #38bdf8;
+    font-size: 40px;
+}
+
+/* Responsividade do titulo */
+
+@media (max-width: 600px) {
+    .titulo-principal {
+        font-size: 30px;
+    }
+}
+
+/* Cabecalho */
+
+.cabecalho {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Responsividade do cabecalho */
+
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 20px;
+    }
+}
+
+/* Foto de Perfil */
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navegacao */
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navegacao a{
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navegacao a:hover {
+    color: #38bdf8;
+}   
+
+/* Responsividade da navegacao */
+
+@media (max-width: 600px) {
+    .navegacao {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* Secoes */
+
+.secao { 
+    background-color: #1e293b;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 12px;
+}
+
+.secao h2 {
+    color: #38bdf8;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.secao p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Responsividade das secoes */
+
+@media (max-width: 600px) {
+    .secao {
+        padding: 20px;
+        margin: 15px;
+    }
+}
+
+/* Lista de Tecnologias */
+
+.lista-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-tecnologias li {
+    background-color: #334155;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.lista-tecnologias li:hover {
+    background-color: #475569;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Adaptação para celulares */
+
+@media (max-width: 600px) {
+    .lista-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #1e293b;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+footer h2 {
+    color: #38bdf8;
+    font-size: 22px;
+}
+
+footer a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: #38bdf8;
+}
+
+/* Responsividade do rodapé */
+
+@media (max-width: 600px) {
+    footer {
+        padding: 20px;
+        margin: 15px;
+    }
+}
