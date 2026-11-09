@@ -1,24 +1,52 @@
 /* Config geral */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #0f172a;
     color: #f8fafc;
     font-family: Arial, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-/* Titulo Principal */
+/* Titulo Principal e Subtitulo */
 
 .titulo-principal {
     color: #38bdf8;
-    font-size: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-/* Responsividade do titulo */
+.subtitulo-profissional {
+    font-size: 18px;
+    color: #f8fafc;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Responsividade do titulo e subtitulo */
 
 @media (max-width: 600px) {
     .titulo-principal {
-        font-size: 30px;
+        font-size: 27px;
     }
+    .subtitulo-profissional {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Cabecalho Sticky */
+
+.cabecalho-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0f172a;
+    padding: 12px 20px;
 }
 
 /* Cabecalho */
@@ -51,6 +79,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 25px;
 }
 
 .navegacao a{
@@ -67,8 +96,9 @@ body {
 
 @media (max-width: 600px) {
     .navegacao {
-        flex-wrap: wrap;
         gap: 15px;
+        min-height: 65px;
+        align-items: center;
     }
 }
 
@@ -117,18 +147,60 @@ body {
     border-radius: 8px;
     text-align: center;
     transition: 0.5s;
+    cursor: default;
+    border: 1px solid transparent;
+
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lista-tecnologias li:hover {
     background-color: #475569;
     transform: translateY(-3px) scale(1.05);
+    border-color: #38bdf8;
+    z-index: 1;
 }
 
-/* Adaptação para celulares */
+/* Responsividade da lista de tecnologias */
 
 @media (max-width: 600px) {
     .lista-tecnologias {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Etiqueta */
+
+.etiqueta {
+    position:absolute;
+    top: 5px;
+    right: 5px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Etiqueta Tecnologia */
+
+.tecnologia-destaque {
+       position: relative;
+}
+
+/* Responsividade da etiqueta tecnologia */
+
+@media (max-width: 600px) {
+    .tecnologia-destaque .etiqueta {
+        top: 2px;
+        right: 5px;
+        padding: 2px 4px;
+        font-size: 8px;
     }
 }
 
@@ -151,6 +223,7 @@ footer a {
     color: #f8fafc;
     text-decoration: none;
     margin: 10px;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
@@ -163,5 +236,35 @@ footer a:hover {
     footer {
         padding: 20px;
         margin: 15px;
+    }
+}
+
+/* Botão Voltar ao Topo */
+
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #38bdf8;
+    color:#0f172a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.voltar-topo:hover {
+    color: #0f172a;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Responsividade do botão Voltar ao Topo */
+
+@media (max-width: 600px) {
+    .voltar-topo {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px 8px;
     }
 }
