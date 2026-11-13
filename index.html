@@ -10,26 +10,46 @@
 
 <body class="pagina">
 
-    <header class="cabecalho">
+    <header id="topo" class="cabecalho cabecalho-sticky">
 
-    <div class="cabecalho-sticky">
-            <h1 class="titulo-principal">Raul Della Torre de Melo</h1>
-            <p class="subtitulo-profissional"> Desenvolvedor Front-end em Formação</p> 
-    
-        <nav class="navegacao">
-            <a href="#trajetoria">Minha Trajetória</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#objetivos">Meus Objetivos</a>
-         </nav>
+    <div class="logo">
+        <a href="#topo">&lt;/&gt;</a>
     </div>
 
-    <img class="foto-perfil" src="imagens/raul.jpg" alt="Foto de perfil">
-
+        <nav class="navegacao">
+            <a href="#topo">Início</a>
+            <a href="#trajetoria">Sobre mim</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+         </nav>
     </header> 
 
     <main>
 
-    <section id="trajetoria" class="secao apresentacao">
+    <section class="hero">
+
+        <div class="hero-conteudo">
+
+            <p class="hero-introducao">OLÁ, EU SOU</p>
+            <h1 class="hero-titulo">Raul Della Torre</h1>
+            <h2 class="hero-cargo">Desenvolvedor</h2>
+            <p class="hero-descricao"> Estou construindo minha carreira na área de desenvolvimento, criando interfaces modernas, funcionais e experiências digitais.</p>
+
+            <div class="hero-botoes">
+                <a href="#projetos">Meus projetos</a>
+                <a href="#contato">Entre em contato</a>
+            </div>
+        
+        </div>
+
+        <div class="hero-imagem">
+            <img src="imagens/raul.png" alt="Raul Della Torre">
+        </div>
+
+    </section>
+
+    <section id="trajetoria" class="secao">
 
     <h2>Minha trajetória</h2>
     
@@ -43,8 +63,8 @@
 
     <h2>Tecnologias</h2>
 
-        <div class="grupo-tecnologias">
-    <p>Tecnologias em aprendizado:</p>
+        <div>
+    <h3>Tecnologias em aprendizado:</h3>
         <ul class="lista-tecnologias"> 
             <li class="tecnologia-destaque"><em>HTML</em><span class="etiqueta">EM ESTUDO</span></li>
             <li class="tecnologia-destaque"><em>CSS</em><span class="etiqueta">EM ESTUDO</span></li>
@@ -54,8 +74,8 @@
         </ul>
         </div>
 
-        <div class="grupo-tecnologias">
-    <p>Conhecimentos e ferramentas:</p>
+        <div>
+    <h3>Conhecimentos e ferramentas:</h3>
         <ul class="lista-tecnologias"> 
             <li><em>SQL Server</em></li>
             <li><em>Python</em></li>
@@ -81,20 +101,18 @@
 
     </main>
 
-    <footer>
+    <footer id="contato">
 
     <h2>Onde me encontrar:</h2>
     <a href="https://github.com/RaulDella">
         Meu GitHub
     </a>
 
-    <br>
-
     <a href="https://www.linkedin.com/in/rauldella">
         Meu LinkedIn
     </a>
 
-    <a href="#" class="voltar-topo"><strong>Voltar ao topo</strong></a>
+    <a href="#topo" class="voltar-topo"><strong>Voltar ao topo</strong></a>
 
     </footer>
 
